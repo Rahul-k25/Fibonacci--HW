@@ -1,0 +1,37 @@
+.container{
+    height: 100vh;
+    margin: 0;
+    display: grid;
+    grid-template-columns: auto;
+    gap: 20px;
+    place-content: center;
+    background: #DAEDFB;
+}
+.button {
+    padding: 20px;
+    color: #BD5532;
+    background:
+      conic-gradient(from 90deg at 3px 3px,#0000 90deg,#BD5532 0)
+      .15em .15em/calc(100% - 3px - 2*.15em) calc(100% - 3px - 2*.15em);
+    transition: .3s linear, color 0s, background-color 0s;
+    outline: 3px solid #0000;
+    outline-offset: .2em;
+  }
+  .button:hover,
+  .button:focus-visible{    
+    outline-color: #BD5532;
+    outline-offset: .05em;
+  }
+  .button:active {
+    background: #BD5532;
+    color: #fff;
+  }
+
+  .button {
+    font-family: system-ui, sans-serif;
+    font-weight: bold;
+    font-size: 4rem;
+    cursor: pointer;
+    border: none;
+    margin: .1em;
+  }
