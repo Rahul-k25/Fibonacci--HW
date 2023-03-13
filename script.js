@@ -24,6 +24,6 @@ function fibonacciSeries() {
   const f0 = Number(prompt("Enter the first number in the sequence:"));
   const f1 = Number(prompt("Enter the second number in the sequence:"));
   const n = Number(prompt("Enter the nth number in the generalized Fibonacci sequence:"));
-  const num = n < 0 ? n+1 : (n == 0) ? n : n-1;
+  const num = n < 0 ? n+1 : (n === 0) ? n : n-1;
   console.log(`The ${n}-th generalized Fibonacci number is: ${fibonacci(f0, f1, num)}`);
 }
